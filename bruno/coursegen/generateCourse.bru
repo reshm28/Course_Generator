@@ -1,0 +1,21 @@
+meta {
+  name: generateCourse
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://0.0.0.0:8000/api/courses/generate
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "topic": "notebboklm"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
