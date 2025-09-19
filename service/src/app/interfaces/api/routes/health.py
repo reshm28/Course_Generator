@@ -1,6 +1,10 @@
 from fastapi import APIRouter, Depends
 
-from app.interfaces.api.schemas import HealthResponse, EchoQuery, EchoResponse
+from app.interfaces.api.schemas import (
+    HealthResponse, 
+    EchoQuery, 
+    EchoResponse
+)
 from app.application.workflows.ai_graph import get_ai_graph_runner
 
 router = APIRouter()
