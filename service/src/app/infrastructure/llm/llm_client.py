@@ -31,6 +31,18 @@ class BaseLLMClient(Protocol):
         ...
 
 
+def get_llm_client(model: str = "gpt-4") -> BaseLLMClient:
+    """Factory function to get an LLM client instance.
+    
+    Args:
+        model: The model to use for the LLM client
+        
+    Returns:
+        An instance of BaseLLMClient
+    """
+    return SimpleLLMClient(model=model)
+
+
 class SimpleLLMClient(BaseLLMClient):
     """Simple implementation of LLM client for testing and development."""
 

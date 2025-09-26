@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.settings import settings
 from app.interfaces.api.routes.health import router as health_router
 from app.interfaces.api.routes.courses import router as courses_router
+from app.interfaces.api.routes.lessons import router as lessons_router
 from app.interfaces.api.middleware import error_handling_middleware
 from app.logging_config import configure_logging
 
@@ -32,6 +33,7 @@ app.middleware("http")(error_handling_middleware)
 # API routes
 app.include_router(health_router)
 app.include_router(courses_router)
+app.include_router(lessons_router)
 
 
 def run() -> None:

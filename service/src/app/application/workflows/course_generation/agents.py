@@ -137,7 +137,7 @@ class ContentGeneratorAgent(BaseAgent):
             Module: {current_module.title}
             Lesson: {lesson.title}
             
-            Please provide a comprehensive lesson with objectives, key points, and a summary.
+            Please provide a comprehensive lesson content with objectives, key points, and a summary.
             """
             
             # Generate the lesson content using the LLM
