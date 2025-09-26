@@ -8,6 +8,7 @@ from .state import (
     ReviewFeedback
 )
 from .agents import PlannerAgent, ContentGeneratorAgent, ReviewerAgent
+from .lesson_content_workflow import LessonContentWorkflow
 from .workflow import CourseGenerationWorkflow
 
 __all__ = [
@@ -20,6 +21,7 @@ __all__ = [
     'PlannerAgent',
     'ContentGeneratorAgent',
     'ReviewerAgent',
+    'LessonContentWorkflow',
     'CourseGenerationWorkflow'
 ]
 

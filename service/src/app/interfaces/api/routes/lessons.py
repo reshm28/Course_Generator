@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from typing import Any, Dict
 import logging
 
-from app.application.workflows.lesson_content_workflow import LessonContentWorkflow
+from app.application.workflows.course_generation.lesson_content_workflow import LessonContentWorkflow
 from app.infrastructure.llm.llm_client import get_llm_client
 from app.interfaces.api.schemas.lesson import (
     GenerateLessonRequest,
