@@ -1,6 +1,6 @@
-# DDD FastAPI Service
+# Course Generator Agent
 
-Production-ready FastAPI backend following Domain-Driven Design (DDD) and Clean Architecture, with LangGraph for AI workflow orchestration.
+Production-ready FastAPI backend following Domain-Driven Design (DDD) and Clean Architecture, with LangGraph for Course Generator Agent AI workflow orchestration.
 
 ## Structure
 
